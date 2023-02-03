@@ -1,5 +1,5 @@
-const MyAccount = () => {
-    return <h1>Account Details</h1>;
-  };
-  
-  export default MyAccount;
+const MyAccount= () => {
+  return <h1>404 payments</h1>;
+};
+
+export default MyAccount;

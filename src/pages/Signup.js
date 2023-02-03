@@ -14,14 +14,19 @@ class SignUp extends Component{
     handleNameChange = (event) =>{
         //  console.log(event.target);
          const {value} = event.target;
+
     
          this.setState(prevState =>({
           formData : {
             ...prevState.formData,
             name : value
           }
-         })) 
-        }
+         }
+  
+  )) 
+  var name= document.getElementById("name");
+  localStorage.setItem('username',name.value)
+}
  handleEmailChange = (event) =>{
       // console.log(event.target);
       const {value} = event.target;
@@ -30,9 +35,11 @@ class SignUp extends Component{
       formData : {
         ...prevState.formData,
         email : value
+        
       }
      })) 
-
+     var email= document.getElementById("email");
+     localStorage.setItem('EmailID',email.value)
     }
     handleGenderChange = (event) =>{
         // console.log(event.target);
@@ -44,7 +51,8 @@ class SignUp extends Component{
           gender: value
         }
        })) 
-  
+       var gender= document.getElementById("gender1");
+       localStorage.setItem('Gender',gender.value)
       }
       handleSubmit=(event) =>{
         event.preventDefault()
@@ -56,25 +64,27 @@ class SignUp extends Component{
       ...formData
     }
   }))    }
+
+
     render(){
         return(
             <React.Fragment>
         <form id="signup" onSubmit={this.handleSubmit}>
              <label> UserName </label>
-          <input type="text" required onChange={this.handleNameChange} />
+          <input id="name" type="text" required onChange={this.handleNameChange} />
 
           <label>Email Address </label>
-            <input type="email"required  onChange={this.handleEmailChange}/>
+            <input id="email" type="email"required  onChange={this.handleEmailChange}/>
 
             <label>Gender </label>
         <nav >
-        <input  type="radio" name="gender" value="Male"  onChange={this.handleGenderChange}></input>
+        <input id="gender1" type="radio" name="gender" value="Male"  onChange={this.handleGenderChange}></input>
             <option  className="gender">Male</option>
 
-           <input  type="radio" name="gender" value="Female" onChange={this.handleGenderChange}></input>
+           <input id="gender1" type="radio" name="gender" value="Female" onChange={this.handleGenderChange}></input>
             <option  className="gender">Female</option>
   
-           <input id="ratio" type="radio" name="gender" value="Other" onChange={this.handleGenderChange}></input>
+           <input id="gender1" type="radio" name="gender" value="Other" onChange={this.handleGenderChange}></input>
            <option  className="gender">other</option>
         </nav>
             
@@ -85,21 +95,28 @@ class SignUp extends Component{
 
             <button type="submit" id="submit">submit</button>
         </form>
-        const data =    ( {
+
+   
+
+
+           {/* {
+
             this.state.finalFormData && Object.keys(this.state.finalFormData).length > 0 && (
             
              <p>
+
             <h3> {this.state.finalFormData.name}</h3>  
              <h3>{this.state.finalFormData.email}</h3> 
              <h3>{this.state.finalFormData.gender}</h3> 
             </p>
-      
-     )
-          })
+
+     )        
+
+          } */}
           </React.Fragment>
            
         )
-    }
+  }
 }
 
   export default SignUp;

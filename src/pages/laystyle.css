@@ -17,14 +17,14 @@ li {
   position: relative;
   font-size: 30px;
 }
-a {
+#bar{
   color: antiquewhite;
   word-spacing: 50px;
   padding: 20px;
   text-decoration: none;
   cursor: pointer;
 }
-a:hover {
+#bar:hover {
   color: black;
 }
 form {
@@ -34,7 +34,7 @@ form {
   width: 500px;
   height: 300px;
   padding: 30px;
-  top: 20%;
+  top: 60%;
   left: 30%;
 }
 input[type="text"],
@@ -84,3 +84,99 @@ label{
   color: red;
   font-size: 40px;
 }
+/* #title{
+  sfont-size:28px; 
+  line-height:1.5em;
+} */
+#span{
+  font-family:libre baskerville,serif;
+  font-size:40px;
+  letter-spacing:0.05em;
+  font-weight:bold;
+}
+#span2{
+  font-family:libre baskerville,serif;
+  font-size:40px;
+  letter-spacing:0.05em;
+  font-weight:bold;
+
+}
+h4{
+  margin-left:400px;
+  margin-top: -90px;
+
+}
+#phone{
+  margin-left: 1200px;
+  margin-top: -50px;
+  color:black;
+}
+#content{
+  display: grid;
+}
+#left{
+  background-color: skyblue;
+  width: 25%;
+  float: left;
+  margin-left:30px;
+  padding: 50px;
+  text-shadow: 0 1px 0;
+  }	
+#center{
+  background-color: black;
+    color: blue;
+    width: 23%;
+  float: left;
+  padding: 50px;
+  text-shadow: 0 1px 0;
+}
+#right{
+  background-color: yellow;
+  width: 25%;
+  float: left;
+  margin-right:10px;
+  padding: 50px;
+  text-shadow: 0 1px 0;
+}
+#content{
+	display: flex;
+column-gap: 30px;
+}
+#grid{
+  color: red;
+  text-transform: uppercase;
+  
+}
+#logo{
+  margin-left: 200px;
+}
+#scroll{
+    padding: 50px;
+    width: 100%;
+    height:0;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+#scroll> h3{
+    position: absolute;
+    font-size: 30px;
+    font-family: times new roman;
+    white-space: nowrap;
+    color:blue;
+    animation: anim 30s linear infinite;
+    font-weight: bold;
+  margin-top: -20px;
+
+}
+@keyframes anim {
+
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(-100%);}
+}
+#homeimage
+{
+  margin-top: 100px;
+}
+
