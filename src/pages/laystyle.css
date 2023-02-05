@@ -1,6 +1,7 @@
 .body {
   margin: 0;
   padding: 0;
+  bottom:1000px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .topbar {
@@ -32,9 +33,9 @@ form {
   text-align: center;
   background-color: tan;
   width: 500px;
-  height: 300px;
+  height: 200px;
   padding: 30px;
-  top: 60%;
+  top: 50%;
   left: 30%;
 }
 input[type="text"],
@@ -73,7 +74,7 @@ h2:hover{
   height: 40px;
 }
 #signup{
-  height:400px;
+  height:500px;
   font-size: 20px;
 }
 label{
@@ -107,9 +108,18 @@ h4{
 
 }
 #phone{
-  margin-left: 1200px;
+  margin-left: 1100px;
   margin-top: -50px;
   color:black;
+}
+#email{
+  font-size: 20px;
+  
+
+}
+#png{
+height: 30px;
+width: 30px;
 }
 #content{
   display: grid;
@@ -179,4 +189,33 @@ column-gap: 30px;
 {
   margin-top: 100px;
 }
-
+#campus{
+  margin-top: 100px;
+  padding: 100px;
+}
+#section1{
+float: left;
+width: 25%;
+}
+#section2{
+  float: left;
+  width: 25%;
+  }
+  #section3{
+    float: left; 
+    width: 25%;
+    }
+ #rankbtn{
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }   
+ 

@@ -14,7 +14,7 @@ class AddBtn extends Component {
   
         <input  id="submit" onClick={this.AddEvent} type="submit"></input>
 
-        <button> Create Account ?</button>
+        <button><a href="http://localhost:3000/signup">Create Account </a> </button>
       
       </form>
         </React.Fragment>
